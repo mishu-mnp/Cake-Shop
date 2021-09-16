@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+body {
+  background-color: #ffffcc;
+}
+
+/* NavBar */
+
+#logo img {
+  height: 50px;
+  border-radius: 5rem;
+  margin: 5px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  /* background-color: #ffff99; */
+  padding: 2px 8px;
+}
+
+.navitem {
+  margin: 1rem 5rem;
+}
+
+.navitem ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.navitem a {
+  text-decoration: none;
+  padding: 5px 20px;
+  font-size: 1.4rem;
+  color: black;
+  font-weight: bold;
+}
+
+.navitem a:hover {
+  background-color: #ff9966;
+  border-radius: 20px;
+  color: #003399;
+}
+
+#cont {
+  display: flex;
+  margin: 15px 2px;
+  padding-left: 8rem;
+  font-size: 1.2rem;
+}
+
+#cont span {
+  padding: 6px 12px;
+}
+
+#cont p {
+  margin: 6px 25px;
+  color: #ff3300;
+}
+
+#order {
+  /* border: 2px solid purple; */
+  border-radius: 20px;
+  background-color: #ff3300;
+  color: white;
+}
+
+/* Home section */
+
+#home {
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("../img/cake2.webp") no-repeat center center/cover;
+  width: 70%;
+  height: 35rem;
+  z-index: -1;
+  opacity: 0.8;
+  margin-top: 1rem;
+  border-top-right-radius: 20px;
+  padding-left: 25rem;
+}
+
+#home h2 {
+  padding-top: 7rem;
+  padding-left: 3rem;
+  font-size: 4rem;
+}
+
+#home p {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+#explore {
+  border-radius: 37px;
+  background-color: #ff3300;
+  color: white;
+  padding: 14px 30px;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Exclusive section */
+#exclusive {
+  position: relative;
+  background-color: #ffffff;
+  /* margin: 22rem; */
+  height: 45rem;
+  margin-top: 12rem;
+  padding-top: 2rem;
+  /* border: 2px solid purple; */
+}
+
+#exclusive span {
+  margin-top: 1.5rem;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff3300;
+}
+
+#exch h2 {
+  font-size: 2.5rem;
+}
+
+.carousel-container {
+  margin: auto;
+  height: 28rem;
+  /* border: 2px solid orange; */
+  display: flex;
+}
+
+.carousel-card {
+  /* border: 2px solid purple; */
+  background-color: #fff5f2;
+  height: 27rem;
+  width: 22rem;
+  text-align: center;
+  margin: 2rem 3rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.carousel-card img {
+  height: 150px;
+  border-bottom-right-radius: 3rem;
+  padding-top: 2rem;
+}
+
+.carousel-card h2 {
+  font-size: 1.5rem;
+}
+
+.carousel-card p {
+  padding: 1.2rem;
+}
+
+.btn {
+  border-radius: 37px;
+  background-color: #ff3300;
+  color: white;
+  padding: 8px 24px;
+  /* margin-top: 1rem; */
+  margin-left: 0rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 4px 8px 8px #aaaaaa;
+}
+
+/* Cake Bake */
+.containercake {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.cake img {
+  border-bottom-right-radius: 12rem;
+}
+
+.cake-texts {
+  margin-left: 5rem;
+}
+
+.cake-title span {
+  color: #ff3300;
+  font-size: 1.2rem;
+}
+
+.cake-title h2 {
+  margin: 9px 0;
+  font-size: 2.5rem;
+}
+
+#btn-story {
+  background-color: #ff3300;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 5px 5px #ffffff;
+  padding: 1.2rem 3rem;
+  font-size: 30px;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.cake-texts p {
+  margin-bottom: 4rem;
+}
+
+/* Features Section */
+#feature {
+  height: 35rem;
+  /* border: 2px solid purple; */
+}
+
+#feature span {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff3300;
+}
+#feature h2 {
+  font-size: 2.5rem;
+}
+
+.card-box {
+  display: flex;
+  /* border: 2px solid green; */
+  height: 30rem;
+}
+
+.cards {
+  /* border: 2px solid #ff3300; */
+  height: 24rem;
+  width: 22rem;
+  text-align: center;
+  margin: 2rem 3rem;
+}
+
+.cards:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* background-color: #fff; */
+  background-color: #ffcccc;
+  padding-top: 2rem;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.cards img {
+  height: 100px;
+  /* padding-top: 2rem; */
+  box-shadow: 5px 4px 8px gray;
+  border-radius: 5rem;
+}
+
+.cards h2 {
+  padding: 1rem 1rem;
+}
+
+.cards p {
+  padding: 1rem 1rem;
+}
+
+/* Cake Video */
+#cakevideo {
+  position: relative;
+  border: 2px solid transparent;
+}
+
+#cakevideo::before {
+  content: "";
+  position: absolute;
+  background: url("../img/cake4.webp") no-repeat center center/cover;
+  width: 70%;
+  height: 32rem;
+  z-index: -1;
+  opacity: 1.2;
+  margin-top: 2rem;
+  padding-left: 25rem;
+}
+
+#video {
+  border: 2px solid transparent;
+  margin: 8rem 5rem;
+}
+
+#video iframe {
+  border-radius: 2rem;
+}
+
+/* Testimonial Section */
+#testimonial span {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff3300;
+}
+
+#testimonial h2 {
+  font-size: 2.5rem;
+}
+
+.testimonial-card {
+  height: 30rem;
+  /* border: 2px solid greenyellow; */
+  display: flex;
+}
+
+.test-card {
+  /* border: 2px solid purple; */
+  height: 22rem;
+  width: 22rem;
+  text-align: center;
+  margin: 2rem 4rem;
+  background-color: white;
+  border-top-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
+
+.test-card:hover {
+  box-shadow: 0 0 5px 5px #f1d1e9;
+  /* background-color: #f0d5d5; */
+}
+
+.test-card p {
+  margin: 2rem;
+}
+
+.customer img {
+  margin-right: 1rem;
+  /* height: 4rem; */
+}
+
+.customer {
+  display: flex;
+  justify-content: center;
+}
+
+.name h3 {
+  color: #ff3300;
+}
+
+.name h4 {
+  margin-left: 5px;
+}
+
+/* More Cakes Section */
+#morecakes {
+  /* border: 2px solid purple; */
+  height: 25rem;
+}
+
+.cakeimg {
+  display: flex;
+  /* margin: 1rem 3rem; */
+}
+
+#morecakes img {
+  height: 11.3rem;
+}
+
+#morecakes span {
+  display: block;
+  color: #ff3300;
+  font-size: 1.2rem;
+}
+
+/* Cake Footer */
+#cakefooter {
+  /* border: 2px solid purple; */
+  height: 30rem;
+}
+
+#cakecontainer {
+  display: flex;
+}
+
+#cakedesc {
+  /* border: 2px solid greenyellow; */
+  width: 30rem;
+  margin: 2rem 3rem;
+}
+
+#cakedesc p {
+  margin: 2rem 0;
+}
+
+#quicklinks {
+  /* border: 2px solid maroon; */
+  margin: 2rem 2rem;
+}
+
+#cakes {
+  margin: 2rem 2rem;
+  /* border: 2px solid orange; */
+}
+
+#cakecontainer h2 {
+  color: #5e5e5e;
+}
+
+#footcontact {
+  margin: 2rem 2rem;
+  /* border: 2px solid pink; */
+}
+
+.reachouticons a {
+  font-size: 1.8rem;
+  color: #ff3300;
+}
+
+#icons {
+  display: flex;
+}
+
+#icons li {
+  list-style: none;
+  margin: 0 12px;
+}
+
+.menu ul {
+  margin-top: 2.5rem;
+}
+
+.menu li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #5e5e5e;
+  font-size: 1.2rem;
+}
+
+.caketypes ul {
+  margin-top: 2.5rem;
+}
+
+.caketypes li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.caketypes li a {
+  text-decoration: none;
+  color: #5e5e5e;
+  font-size: 1.2rem;
+}
+
+#footcontact p {
+  margin-top: 3.5rem;
+  font-size: 1.4rem;
+}
+
+#footcontact div {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  color: #ff3300;
+}
+
+#footcontact div span {
+  margin-left: 0.9rem;
+}
+
+.copy {
+  display: block;
+  margin-top: 2.4rem;
+}
+
+.copy i {
+  padding-left: 5px;
+  color: #ff3300;
+  font-size: 1.2rem;
+}
+
+/* Utils */
+.center {
+  text-align: center;
+}
+
+.ltspc {
+  letter-spacing: 2px;
+}
